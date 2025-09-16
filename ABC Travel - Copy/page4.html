@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rentals - Travel App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .brand {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        .nav-links li {
+            margin-left: 20px;
+        }
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        .nav-links li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Car list styling */
+        .car-list {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .car-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .car-item:last-child {
+            border-bottom: none;
+        }
+        .car-info {
+            max-width: 70%;
+        }
+        .car-info h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .car-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .rental-info {
+            text-align: right;
+        }
+        .rental-info p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        .rent-btn {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .rent-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .footer-left {
+            display: flex;
+            align-items: flex-start;
+        }
+        .footer-left .brand {
+            margin-right: 40px;
+        }
+        .brand .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .content {
+            margin-right: 40px;
+        }
+        .content .title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .links ul li {
+            margin: 5px 0;
+        }
+
+        /* Title as Button */
+        .main-website-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .main-website-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollToTop"><i class="fas fa-chevron-up"></i></div>
+    <div class="container">
+<header>
+    <nav>
+        <!-- Left side: brand title -->
+        <div class="brand">
+            <a href="C:\Users\Asus\Desktop\ABC Travel\index.html" style="color: #fff; text-decoration: none;">ABC Travellers</a>
+        </div>
+        
+        <!-- Right side: navigation links -->
+        <ul class="nav-links">
+            <li><a href="C:\Users\Asus\Desktop\ABC Travel\page1.html">Home Stays</a></li>
+            <li><a href="C:\Users\Asus\Desktop\ABC Travel\page2.html">Flights</a></li>
+            <li><a href="C:\Users\Asus\Desktop\ABC Travel\page3.html">Hotels</a></li>
+            <li><a href="C:\Users\Asus\Desktop\ABC Travel\page4.html">Car Rentals</a></li>
+            <li><a href="C:\Users\Asus\Desktop\ABC Travel\page5.html">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="car-list">
+        <!-- Car 1 -->
+        <div class="car-item">
+            <div class="car-info">
+                <h3>Toyota Camry</h3>
+                <p>Type: Sedan</p>
+                <p>Fuel: Petrol</p>
+                <p>Seats: 5</p>
+            </div>
+            <div class="rental-info">
+                <p>Amount: $50/day</p>
+                <p>Duration: 3 days</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="car-item">
+            <div class="car-info">
+                <h3>Ford Explorer</h3>
+                <p>Type: SUV</p>
+                <p>Fuel: Diesel</p>
+                <p>Seats: 7</p>
+            </div>
+            <div class="rental-info">
+                <p>Amount: $80/day</p>
+                <p>Duration: 5 days</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+        </div>
+
+        <!-- Car 3 -->
+        <div class="car-item">
+            <div class="car-info">
+                <h3>Honda Civic</h3>
+                <p>Type: Sedan</p>
+                <p>Fuel: Hybrid</p>
+                <p>Seats: 5</p>
+            </div>
+            <div class="rental-info">
+                <p>Amount: $45/day</p>
+                <p>Duration: 2 days</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <!-- Left side: logo and links -->
+            <div class="footer-left">
+                <div class="brand">
+                    <div class="logo"></div>
+                    <div class="subTitle"></div>
+                </div> 
+                <div class="content">
+                    <div class="title">Company</div>
+                    <div class="links">
+                        <ul>
+                            <li>About</li>
+                            <li>Careers</li>
+                            <li>Mobile</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">Contact</div>
+                    <div class="links">
+                        <ul>
+                            <li>Help/FAQ</li>
+                            <li>Press</li>
+                            <li>Affiliates</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">More</div>
+                    <div class="links">
+                        <ul>
+                            <li>Airline Fees</li>
+                            <li>Low Fare Trips</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right side: Button to the main website -->
+            <a href="C:\Users\Asus\Desktop\ABC Travel\index.html" class="main-website-btn">Visit Main Website</a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>

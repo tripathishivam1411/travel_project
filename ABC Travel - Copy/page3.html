@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .brand a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links li {
+            display: inline;
+        }
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        .hotel-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .hotel-details {
+            display: flex;
+            justify-content: space-between;
+        }
+        .hotel-info {
+            flex: 1;
+        }
+        .price {
+            color: #28a745;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .book-now {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .book-now:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        .grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .content, .brand, .social {
+            flex: 1;
+            margin: 10px;
+        }
+        .title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .links li {
+            margin-bottom: 5px;
+        }
+        .social .links {
+            display: flex;
+            gap: 10px;
+        }
+        .app .links img {
+            width: 120px;
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .grid {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Scroll to Top -->
+    <div class="scrollToTop"><i class="fas fa-chevron-up"></i></div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <!-- Left side: brand title -->
+            <div class="brand">
+                <a href="C:\Users\Asus\Desktop\ABC Travel\index.html">ABC Travellers</a>
+            </div>
+            <!-- Right side: navigation links -->
+            <ul class="nav-links">
+                <li><a href="C:\Users\Asus\Desktop\ABC Travel\page1.html">Home Stays</a></li>
+                <li><a href="C:\Users\Asus\Desktop\ABC Travel\page2.html">Flights</a></li>
+                <li><a href="C:\Users\Asus\Desktop\ABC Travel\page3.html">Hotels</a></li>
+                <li><a href="C:\Users\Asus\Desktop\ABC Travel\page4.html">Car Rentals</a></li>
+                <li><a href="C:\Users\Asus\Desktop\ABC Travel\page5.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <h1>Hotels for Your Stay</h1>
+
+    <!-- Hotel 1 -->
+    <div class="hotel-card">
+        <div class="hotel-details">
+            <div class="hotel-info">
+                <h2>Hotel Sunshine</h2>
+                <p><strong>Location:</strong> New York, USA</p>
+                <p><strong>Check-in:</strong> <input type="date" name="checkin"></p>
+                <p><strong>Check-out:</strong> <input type="date" name="checkout"></p>
+                <p><strong>Guests:</strong> <input type="number" name="guests" value="1" min="1" max="10"></p>
+            </div>
+            <div class="hotel-price">
+                <p class="price">$120/night</p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hotel 2 -->
+    <div class="hotel-card">
+        <div class="hotel-details">
+            <div class="hotel-info">
+                <h2>Grand Palace Hotel</h2>
+                <p><strong>Location:</strong> Paris, France</p>
+                <p><strong>Check-in:</strong> <input type="date" name="checkin"></p>
+                <p><strong>Check-out:</strong> <input type="date" name="checkout"></p>
+                <p><strong>Guests:</strong> <input type="number" name="guests" value="1" min="1" max="10"></p>
+            </div>
+            <div class="hotel-price">
+                <p class="price">€180/night</p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hotel 3 -->
+    <div class="hotel-card">
+        <div class="hotel-details">
+            <div class="hotel-info">
+                <h2>Beachside Resort</h2>
+                <p><strong>Location:</strong> Bali, Indonesia</p>
+                <p><strong>Check-in:</strong> <input type="date" name="checkin"></p>
+                <p><strong>Check-out:</strong> <input type="date" name="checkout"></p>
+                <p><strong>Guests:</strong> <input type="number" name="guests" value="1" min="1" max="10"></p>
+            </div>
+            <div class="hotel-price">
+                <p class="price">$90/night</p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="grid">
+            <div class="brand">
+                <div class="logo"></div>
+                <div class="subTitle"></div>
+            </div>
+            <div class="content">
+                <div class="title">Company</div>
+                <div class="links">
+                    <ul>
+                        <li>About</li>
+                        <li>Careers</li>
+                        <li>Mobile</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="title">Contact</div>
+                <div class="links">
+                    <ul>
+                        <li>Help/FAQ</li>
+                        <li>Press</li>
+                        <li>Affiliates</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="title">More</div>
+                <div class="links">
+                    <ul>
+                        <li>Airline Fees</li>
+                        <li>Airline</li>
+                        <li>Low Fare Trips</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social">
+                <div class="links">
+                    <div class="link">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="link">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="link">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </div>
+                <div class="app">
+                    <div class="title">Discover our app</div>
+                    <div class="links">
+                        <img src="assets/playstore.png" alt="Play Store" />
+                        <img src="assets/appstore.png" alt="App Store" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

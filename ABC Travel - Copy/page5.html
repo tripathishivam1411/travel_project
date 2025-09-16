@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end; /* Align the navigation links to the right */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-section {
+            width: 80%;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info div {
+            width: 30%;
+        }
+
+        .contact-info h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .contact-form {
+            width: 100%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        footer .grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        footer .brand, footer .content, footer .social {
+            width: 23%;
+        }
+
+        footer .title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        footer .links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer .links ul li {
+            margin-bottom: 8px;
+        }
+
+        footer .links ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer .links ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer .social .links .link {
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        footer .social .links .link i {
+            font-size: 24px;
+            color: white;
+        }
+
+        footer .app img {
+            width: 100px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollToTop"><i class="fas fa-chevron-up"></i></div>
+    <div class="container">
+<header>
+    <!-- Left side: brand title -->
+    <div class="brand">
+        <a href="C:\Users\Asus\Desktop\ABC Travel\index.html" style="color: #fff; text-decoration: none;">ABC Travellers</a>
+    </div>
+    
+    <!-- Right side: navigation links -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="C:\Users\Asus\Desktop\ABC Travel\page1.html">Home Stays</a></li>
+            <li><a href="C:\Users\Asus\Desktop\ABC Travel\page2.html">Flights</a></li>
+            <li><a href="C:\Users\Asus\Desktop\ABC Travel\page3.html">Hotels</a></li>
+            <li><a href="C:\Users\Asus\Desktop\ABC Travel\page4.html">Car Rentals</a></li>
+            <li><a href="C:\Users\Asus\Desktop\ABC Travel\page5.html">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="contact-section">
+        <h2>Contact Us - We're here 24/7</h2>
+        
+        <div class="contact-info">
+            <div>
+                <h3>Address</h3>
+                <p>123 Travel Avenue,</p>
+                <p>City, Country</p>
+            </div>
+            <div>
+                <h3>Email</h3>
+                <p>support@travelapp.com</p>
+                <p>info@travelapp.com</p>
+            </div>
+            <div>
+                <h3>Phone</h3>
+                <p>+1 234 567 890</p>
+                <p>+1 987 654 321</p>
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="grid">
+          <div class="brand">
+            <div class="logo"></div>
+            <div class="subTitle"></div>
+          </div> 
+          <div class="content">
+            <div class="title">Company</div>
+            <div class="links">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Mobile</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content">
+            <div class="title">Contact</div>
+            <div class="links">
+              <ul>
+                <li><a href="#">Help/FAQ</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Affiliates</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content">
+            <div class="title">More</div>
+            <div class="links">
+              <ul>
+                <li><a href="#">Airline Fees</a></li>
+                <li><a href="#">Airline</a></li>
+                <li><a href="#">Low Fare Trips</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="social">
+            <div class="links">
+              <div class="link">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <div class="link">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="link">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+            </div>
+            <div class="app">
+              <div class="title">Discover our app</div>
+              <div class="links">
+                <img src="assets/playstore.png" alt="" />
+                <img src="assets/appstore.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <span></span>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
